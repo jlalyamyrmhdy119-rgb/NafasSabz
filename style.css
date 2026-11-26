@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background: #F4F1E6;
+    color: #174D3A;
+    text-align: center;
+    direction: rtl;
+}
+
+header {
+    padding: 45px 20px;
+    background: #174D3A;
+    color: white;
+    border-radius: 0 0 30px 30px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 3px 5px #0004;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #C5E5D0;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 25px;
+}
+
+h1 {
+    color: #174D3A;
+    margin: 30px 0;
+}
+
+h3 {
+    color: #38734F;
+    margin-top: 30px;
+}
+
+p {
+    line-height: 2.2;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+ul {
+    display: inline-block;
+    text-align: right;
+    line-height: 2.5;
+    margin: 10px auto;
+}
+
+img {
+    width: 250px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 10px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+button {
+    background: #A8CFA5;
+    color: #174D3A;
+    border: none;
+    border-radius: 16px;
+    padding: 18px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background: #D9A441;
+}
+.tree-button {
+    background: #174D3A;
+    color: white;
+}
+
+.tree-button:hover {
+    background: #38734F;
+}
+
+.tree-button {
+    background: #174D3A;
+    color: white;
+}
+
+.back-button {
+    background: #4F9D91;
+    color: white;
+}
+
+.back-button:hover {
+    background: #367C72;
+}
+.info-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 12px #0002;
+}
+.tree-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tree-images img {
+    width: 250px;
+    height: 190px;
+    object-fit: cover;
+    margin: 0;
+}
+.library-feed {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: none;
+    padding-bottom: 80px;
+}
+
+.library-item {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.library-item {
+    background: #E5F0E7;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.library-item h2 {
+    font-size: 30px;
+    color: #174D3A;
+}
+
+.library-item img {
+    width: 85%;
+    max-width: 350px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.library-item p {
+    max-width: 600px;
+}
+#treeSearch {
+    width: 85%;
+    max-width: 450px;
+    padding: 15px;
+    border: 2px solid #4F9D91;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: Tahoma;
+    text-align: right;
+    margin: 20px auto;
+    outline: none;
+}
+
+#treeSearch:focus {
+    border-color: #174D3A;
+}
+#citySearch {
+    width: 85%;
+    max-width: 450px;
+    padding: 15px;
+    border: 2px solid #4F9D91;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: Tahoma;
+    text-align: right;
+    margin: 20px auto;
+    outline: none;
+}
+
+#citySearch:focus {
+    border-color: #174D3A;
+}
+.home-button {
+    background: #174D3A;
+    color: white;
+    width: 85%;
+    max-width: 400px;
+    padding: 22px;
+    border-radius: 20px;
+    font-size: 19px;
+    margin: 8px auto;
+    box-shadow: 0 4px 10px #0002;
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background: #4F9D91;
+    transform: translateY(-3px);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 45px 20px;
+}
+
+#treeSearch,
+#citySearch {
+    width: 85%;
+    max-width: 450px;
+    padding: 16px;
+    border: 2px solid #4F9D91;
+    border-radius: 18px;
+    font-size: 17px;
+    font-family: Tahoma;
+    text-align: right;
+    margin: 20px auto;
+    background: #FFFFFF;
+    color: #174D3A;
+    outline: none;
+    box-shadow: 0 3px 10px #0001;
+}
+
+#treeSearch:focus,
+#citySearch:focus {
+    border-color: #174D3A;
+}
+.library-feed {
+    scroll-snap-type: none;
+}
+.library-item {
+    scroll-snap-align: none;
+}
+    .back-button {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 90%;
+    max-width: 300px;
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">nafas safc</string>
+    <string name="title_activity_main">nafas safc</string>
+    <string name="package_name">com.nafassabz.app</string>
+    <string name="custom_url_scheme">com.nafassabz.app</string>
+</resources>
